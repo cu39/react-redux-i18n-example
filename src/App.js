@@ -25,7 +25,12 @@ class App extends Component {
         <p>
           <Localize value={Date.now()} dateFormat="date.long"/>
         </p>
-        <LocaleSelectorContainer />
+        <LocaleSelectorContainer
+          options = {[
+            { value: 'en', label: 'English' },
+            { value: 'ja', label: '日本語' },
+          ]}
+        />
       </div>
     );
   }
