@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Translate, Localize } from 'react-redux-i18n'
-import LocaleSelectorContainer from './containers/LocaleSelectorContainer'
-import logo from './logo.svg';
+import LocaleSelectorContainer from '../containers/LocaleSelectorContainer'
+import logo from '../images/logo.svg';
 import './App.css';
 
 class App extends Component {
