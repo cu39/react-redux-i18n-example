@@ -4,7 +4,7 @@ import 'react-select/dist/react-select.css';
 import { setLocale } from 'react-redux-i18n'
 import './LocaleSelector.css'
 
-const LocaleSelector = ({ state, dispatch }) => {
+const LocaleSelector = ({ locale, dispatch }) => {
   const handleChange = (selectedOption) => {
     const nextLocale = selectedOption.value
     dispatch(setLocale(nextLocale))
@@ -18,7 +18,7 @@ const LocaleSelector = ({ state, dispatch }) => {
   return (
     <Select
       name="locale-selector"
-      value={state.i18n.locale}
+      value={locale}
       onChange={handleChange}
       options={options}
       clearable={false}

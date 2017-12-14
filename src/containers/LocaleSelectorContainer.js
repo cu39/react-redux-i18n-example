@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import LocaleSelector from '../components/LocaleSelector'
 
 const mapState = (state, ownProps) => ({
-  state,
+  locale: state.i18n.locale,
 })
 
 const LocaleSelectorContainer = connect(mapState)(LocaleSelector)
